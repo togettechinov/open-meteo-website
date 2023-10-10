@@ -310,16 +310,16 @@
 </script>
 
 <svelte:head>
-	<title>Ensemble API | Open-Meteo.com</title>
+	<title>Ensemble API | MNOCC</title>
 	<link rel="canonical" href="https://open-meteo.com/en/docs/ensemble-api" />
 </svelte:head>
 
 <div class="alert alert-primary" role="alert">
-	The initial version of ensemble weather models has been integrated. You can learn more about these
-	models in the <a
+	Les prévisions météorologiques d'ensemble constituent un type particulier de méthode de prévision qui prend en compte les incertitudes liées à la prévision du temps.
+	<!-- models in the <a
 		href="https://openmeteo.substack.com/p/ensemble-weather-forecast-api"
 		target="_blank">blog article</a
-	>.
+	>. -->
 </div>
 
 <form method="get" action="https://ensemble-api.open-meteo.com/v1/ensemble">
@@ -613,8 +613,8 @@
 <ResultPreview {params} {defaultParameter} type="ensemble" action="ensemble" />
 
 <div class="col-12 py-5">
-	<h2 id="data-sources">Data Source</h2>
-	<p>
+	<h2 id="data-sources">Sources de données</h2>
+	<!-- <p>
 		Ensemble models are a type of weather forecasting technique that use multiple members or
 		versions of a model to produce a range of possible outcomes for a given forecast. Each member is
 		initialized with slightly different initial conditions and/or model parameters to account for
@@ -633,7 +633,7 @@
 		model provides exceptionally high resolution for Europe but only forecasts up to 7 days.
 		Meanwhile, the GFS model can forecast up to 35 days, albeit at a lower resolution of 50 km. The
 		appropriate ensemble model to use would depend on the forecast horizon and region of interest.
-	</p>
+	</p> -->
 	<div class="table-responsive">
 		<table class="table">
 			<thead>
@@ -711,20 +711,20 @@
 			</tbody>
 		</table>
 	</div>
-	<p>
+	<!-- <p>
 		To ensure ease of use, all data is interpolated to a 1-hourly time-step resolution. As the
 		forecast horizon extends further into the future, some ensemble models may reduce the time
 		resolution to 6-hourly intervals.
-	</p>
+	</p> -->
 </div>
 
-<h2 id="api-documentation" class="mt-3">API Documentation</h2>
-<p>
+<!-- <h2 id="api-documentation" class="mt-3">API Documentation</h2> -->
+<!-- <p>
 	The API endpoint <mark>/v1/ensemble</mark> accepts a geographical coordinate, a list of weather variables
 	and responds with a JSON hourly weather forecast for 7 days for each ensemble member. Time always starts
 	at 0:00 today. All URL parameters are listed below:
-</p>
-<div class="table-responsive">
+</p> -->
+<!-- <div class="table-responsive">
 	<table class="table">
 		<thead>
 			<tr>
@@ -735,8 +735,8 @@
 				<th scope="col">Description</th>
 			</tr>
 		</thead>
-		<tbody>
-			<tr>
+		<tbody> -->
+			<!-- <tr>
 				<th scope="row">latitude, longitude</th>
 				<td>Floating point</td>
 				<td>Yes</td>
@@ -754,8 +754,8 @@
 				<td>Yes</td>
 				<td />
 				<td>Select one or more ensemble weather models as comma-separated list</td>
-			</tr>
-			<tr>
+			</tr> -->
+			<!-- <tr>
 				<th scope="row">elevation</th>
 				<td>Floating point</td>
 				<td>No</td>
@@ -769,8 +769,8 @@
 					<mark>&elevation=nan</mark> is specified, downscaling will be disabled and the API uses the
 					average grid-cell height. For multiple locations, elevation can also be comma separated.</td
 				>
-			</tr>
-			<tr>
+			</tr> -->
+			<!-- <tr>
 				<th scope="row">hourly</th>
 				<td>String array</td>
 				<td>No</td>
@@ -780,7 +780,7 @@
 					multiple
 					<mark>&hourly=</mark> parameter in the URL can be used.
 				</td>
-			</tr>
+			</tr> -->
 			<!--<tr>
 				<th scope="row">daily</th>
 				<td>String array</td>
@@ -792,7 +792,7 @@
 					daily weather variables are specified, parameter <mark>timezone</mark> is required.</td
 				>
 			</tr>-->
-			<tr>
+			<!-- <tr>
 				<th scope="row">temperature_unit</th>
 				<td>String</td>
 				<td>No</td>
@@ -899,19 +899,19 @@
 			</tr>
 		</tbody>
 	</table>
-</div>
-<p>
+</div> -->
+<!-- <p>
 	Additional optional URL parameters will be added. For API stability, no required parameters will
 	be added in the future!
-</p>
+</p> -->
 
-<h3 class="mt-3">Hourly Parameter Definition</h3>
+<!-- <h3 class="mt-3">Hourly Parameter Definition</h3>
 <p>
 	The parameter <mark>&hourly=</mark> accepts the following values. Most weather variables are given
 	as an instantaneous value for the indicated hour. Some variables like precipitation are calculated
 	from the preceding hour as an average or sum.
-</p>
-<div class="table-responsive">
+</p> -->
+<!-- <div class="table-responsive">
 	<table class="table">
 		<thead>
 			<tr>
@@ -1152,4 +1152,4 @@
 			</tr>
 		</tbody>
 	</table>
-</div>
+</div> -->

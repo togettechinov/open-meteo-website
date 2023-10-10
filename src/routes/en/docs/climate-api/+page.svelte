@@ -20,10 +20,10 @@
 	};
 
 	const params = urlHashStore({
-		latitude: [52.52],
-		longitude: [13.41],
-		start_date: '1950-01-01',
-		end_date: '2050-12-31',
+		latitude: [3.87],
+		longitude: [11.50],
+		start_date: '1980-01-01',
+		end_date: '2030-12-31',
 		models: [
 			'CMCC_CM2_VHR4',
 			'FGOALS_f3_H',
@@ -44,22 +44,22 @@
 			{ name: 'temperature_2m_min', label: 'Minimum Temperature (2 m)' },
 			{ name: 'windspeed_10m_mean', label: 'Mean Wind Speed (10 m)' },
 			{ name: 'windspeed_10m_max', label: 'Max Wind Speed (10 m)' },
-			{ name: 'cloudcover_mean', label: 'Mean Cloud Cover' },
-			{ name: 'shortwave_radiation_sum', label: 'Shortwave Radiation Sum' }
+			// { name: 'cloudcover_mean', label: 'Mean Cloud Cover' },
+			// { name: 'shortwave_radiation_sum', label: 'Shortwave Radiation Sum' }
 		],
 		[
 			{ name: 'relative_humidity_2m_mean', label: 'Mean Relative Humidity (2 m)' },
 			{ name: 'relative_humidity_2m_max', label: 'Maximum Relative Humidity (2 m)' },
 			{ name: 'relative_humidity_2m_min', label: 'Minimum Relative Humidity (2 m)' },
-			{ name: 'dewpoint_2m_mean', label: 'Mean Dewpoint (2 m)' },
-			{ name: 'dewpoint_2m_min', label: 'Minimum Dewpoint (2 m)' },
-			{ name: 'dewpoint_2m_max', label: 'Maximum Dewpoint (2 m)' }
+			// { name: 'dewpoint_2m_mean', label: 'Mean Dewpoint (2 m)' },
+			// { name: 'dewpoint_2m_min', label: 'Minimum Dewpoint (2 m)' },
+			// { name: 'dewpoint_2m_max', label: 'Maximum Dewpoint (2 m)' }
 		],
 		[
 			{ name: 'precipitation_sum', label: 'Precipitation Sum' },
-			{ name: 'rain_sum', label: 'Rain Sum' },
-			{ name: 'snowfall_sum', label: 'Snowfall Sum' },
-			{ name: 'pressure_msl_mean', label: 'Sealevel Pressure' },
+			// { name: 'rain_sum', label: 'Rain Sum' },
+			// { name: 'snowfall_sum', label: 'Snowfall Sum' },
+			// { name: 'pressure_msl_mean', label: 'Sealevel Pressure' },
 			{ name: 'soil_moisture_0_to_10cm_mean', label: 'Mean Soil Moisture (0-10 cm)' },
 			{ name: 'et0_fao_evapotranspiration_sum', label: 'Reference Evapotranspiration (ET₀)' }
 		]
@@ -67,40 +67,40 @@
 
 	if (dev) {
 		daily.push([
-			{ name: 'vapor_pressure_deficit_max', label: 'Vapor Pressure Deficit' },
-			{ name: 'soil_moisture_0_to_100cm_mean', label: 'Mean Soil Moisture (0-100 cm)' },
-			{ name: 'soil_moisture_7_to_28cm_mean', label: 'Mean Soil Moisture (7-28 cm)' },
-			{ name: 'soil_moisture_28_to_100cm_mean', label: 'Mean Soil Moisture (28-100 cm)' },
-			{ name: 'soil_moisture_index_0_to_100cm_mean', label: 'Mean Soil Moisture Index (0-100 cm)' },
-			{ name: 'soil_moisture_index_0_to_10cm_mean', label: 'Mean Soil Moisture Index (0-10 cm)' },
-			{ name: 'soil_moisture_index_7_to_28cm_mean', label: 'Mean Soil Moisture Index (7-28 cm)' },
-			{
-				name: 'soil_moisture_index_28_to_100cm_mean',
-				label: 'Mean Soil Moisture Index (28-100 cm)'
-			},
-			{ name: 'soil_temperature_0_to_100cm_mean', label: 'Mean Soil Temperature (0-100 cm)' },
-			{ name: 'soil_temperature_7_to_28cm_mean', label: 'Mean Soil Temperature (7-28 cm)' },
-			{ name: 'soil_temperature_28_to_100cm_mean', label: 'Mean Soil Temperature (28-100 cm)' },
-			{ name: 'growing_degree_days_base_0_limit_50', label: 'GDD 0-50°C' },
-			{ name: 'daylight_duration', label: 'Daylight Duration' }
+			// { name: 'vapor_pressure_deficit_max', label: 'Vapor Pressure Deficit' },
+			// { name: 'soil_moisture_0_to_100cm_mean', label: 'Mean Soil Moisture (0-100 cm)' },
+			// { name: 'soil_moisture_7_to_28cm_mean', label: 'Mean Soil Moisture (7-28 cm)' },
+			// { name: 'soil_moisture_28_to_100cm_mean', label: 'Mean Soil Moisture (28-100 cm)' },
+			// { name: 'soil_moisture_index_0_to_100cm_mean', label: 'Mean Soil Moisture Index (0-100 cm)' },
+			// { name: 'soil_moisture_index_0_to_10cm_mean', label: 'Mean Soil Moisture Index (0-10 cm)' },
+			// { name: 'soil_moisture_index_7_to_28cm_mean', label: 'Mean Soil Moisture Index (7-28 cm)' },
+			// {
+			// 	name: 'soil_moisture_index_28_to_100cm_mean',
+			// 	label: 'Mean Soil Moisture Index (28-100 cm)'
+			// },
+			// { name: 'soil_temperature_0_to_100cm_mean', label: 'Mean Soil Temperature (0-100 cm)' },
+			// { name: 'soil_temperature_7_to_28cm_mean', label: 'Mean Soil Temperature (7-28 cm)' },
+			// { name: 'soil_temperature_28_to_100cm_mean', label: 'Mean Soil Temperature (28-100 cm)' },
+			// { name: 'growing_degree_days_base_0_limit_50', label: 'GDD 0-50°C' },
+			// { name: 'daylight_duration', label: 'Daylight Duration' }
 		]);
 	}
 
 	const models = [
 		[
-			{ name: 'CMCC_CM2_VHR4', label: 'CMCC_CM2_VHR4', caption: '30 km' },
-			{ name: 'FGOALS_f3_H', label: 'FGOALS_f3_H', caption: '28 km' },
-			{ name: 'HiRAM_SIT_HR', label: 'HiRAM_SIT_HR', caption: '25 km' },
-			{ name: 'MRI_AGCM3_2_S', label: 'MRI_AGCM3_2_S', caption: '20 km' },
-			{ name: 'EC_Earth3P_HR', label: 'EC_Earth3P_HR', caption: '29 km' },
-			{ name: 'MPI_ESM1_2_XR', label: 'MPI_ESM1_2_XR', caption: '51 km' },
-			{ name: 'NICAM16_8S', label: 'NICAM16_8S', caption: '31 km' }
+			{ name: 'CMCC_CM2_VHR4', label: 'ONACC-CMCC_CM2_VHR4', caption: '30 km' },
+			{ name: 'FGOALS_f3_H', label: 'ONACC-FGOALS_f3_H', caption: '28 km' },
+			{ name: 'HiRAM_SIT_HR', label: 'ONACC-HiRAM_SIT_HR', caption: '25 km' },
+			{ name: 'MRI_AGCM3_2_S', label: 'ONACC-MRI_AGCM3_2_S', caption: '20 km' },
+			{ name: 'EC_Earth3P_HR', label: 'ONACC-EC_Earth3P_HR', caption: '29 km' },
+			{ name: 'MPI_ESM1_2_XR', label: 'ONACC-MPI_ESM1_2_XR', caption: '51 km' },
+			{ name: 'NICAM16_8S', label: 'ONACC-NICAM16_8S', caption: '31 km' }
 		]
 	];
 </script>
 
 <svelte:head>
-	<title>🌡️ Climate API | Open-Meteo.com</title>
+	<title>Climate | MNOCC</title>
 	<link rel="canonical" href="https://open-meteo.com/en/docs/climate-api" />
 	<meta
 		name="description"
@@ -109,8 +109,9 @@
 </svelte:head>
 
 <div class="alert alert-primary" role="alert">
-	Read the <a href="https://openmeteo.substack.com/p/climate-change-api">blog article</a> with more information
-	about climate models and how data is downscaled to 10 km resolution.
+	<!-- Read the <a href="https://openmeteo.substack.com/p/climate-change-api">blog article</a> with more information
+	about climate models and how data is downscaled to 10 km resolution. -->
+	Changements Climatiques
 </div>
 
 <form method="get" action="https://climate-api.open-meteo.com/v1/climate">
@@ -132,7 +133,7 @@
 		</div>
 		<div class="col-md-6 mb-3">
 			<p>
-				Quick:
+				Rapide :
 				<button
 					class="btn btn-outline-primary btn-sm"
 					on:click|preventDefault={() => (
@@ -150,7 +151,7 @@
 	</div>
 
 	<div class="row py-3 px-0">
-		<h2>Daily Weather Variables</h2>
+		<h2>Variables météorologiques</h2>
 		{#each daily as group}
 			<div class="col-md-4">
 				{#each group as e}
@@ -201,7 +202,7 @@
 	</div>
 
 	<div class="row py-3 px-0">
-		<h2>Settings</h2>
+		<h2>Configurations</h2>
 		<div class="col-12 pb-3">
 			<div class="form-check form-switch">
 				<input
@@ -212,7 +213,7 @@
 					bind:checked={$params.disable_bias_correction}
 				/>
 				<label class="form-check-label" for="disable_bias_correction"
-					>Raw data. Disable statistical downscaling with ERA5-Land (10 km)</label
+					>Données brutes. Désactiver la réduction d'échelle statistique avec ERA5-Land (10 km)</label
 				>
 			</div>
 		</div>
@@ -285,9 +286,9 @@
 
 <ResultPreview {params} {defaultParameter} type="climate" action="climate" useStockChart={true} />
 
-<h2 id="data-sources" class="mt-5">Data Sources</h2>
+<h2 id="data-sources" class="mt-5">Sources de données</h2>
 <div class="row">
-	<div class="col-6">
+	<!-- <div class="col-6">
 		<p>
 			This API utilizes regional downscaled climate models with up to 20 kilometer resolution from
 			the <a href="https://hrcm.ceda.ac.uk/research/cmip6-highresmip/" title="CMIP6 HighResMIP"
@@ -329,7 +330,7 @@
 			provide a general recommendation on which model is better. It is recommended to run analyses
 			with multiple models and evaluate their performance afterward.
 		</p>
-	</div>
+	</div> -->
 </div>
 <div class="table-responsive">
 	<table class="table">
@@ -432,10 +433,24 @@
 				<td>31&nbsp;km</td>
 				<td><a href="https://gmd.copernicus.org/articles/14/795/2021/">Model</a></td>
 			</tr>
+			<tr>
+				<th scope="row"
+					><a href="https://www.wdc-climate.de/ui/cmip6?input=CMIP6.HighResMIP.MIROC.NICAM16-8S"
+						>ONACC-MC</a
+					>
+				</th>
+				<td>Cameroun</td>
+				<td
+					>Observatoire National sur les Changements Climatiques</td
+				>
+				<td>N/A</td>
+				<td><a href="https://gmd.copernicus.org/articles/14/795/2021/">Model</a></td>
+			</tr>
 		</tbody>
 	</table>
 </div>
-<div class="row">
+
+<!-- <div class="row">
 	<p>
 		Some weather variables may not be available in all climate models. Notably, soil moisture is
 		only available in
@@ -444,13 +459,14 @@
 		is generally available. The table below outlines the weather variables that are available in
 		each model:
 	</p>
-</div>
-<div class="table-responsive">
-	<table class="table">
-		<caption
+</div> -->
+
+<!-- <div class="table-responsive">
+	<table class="table"> -->
+		<!-- <caption
 			>&#x26a0;&#xfe0f; = Only daily <mark>mean</mark> values available. No daily minima or maxima.</caption
-		>
-		<thead>
+		> -->
+		<!-- <thead>
 			<tr>
 				<th scope="col" style="width: 22%">Model</th>
 				<th scope="col" style="width: 13%">Temperature</th>
@@ -460,8 +476,8 @@
 				<th scope="col" style="width: 13%">Snowfall,<br />Solar Radiation &<br />Clouds</th>
 				<th scope="col" style="width: 13%">Soil moisture</th>
 			</tr>
-		</thead>
-		<tbody>
+		</thead> -->
+		<!-- <tbody>
 			<tr>
 				<th scope="row">CMCC-CM2-VHR4</th>
 				<td>&#x2705;</td>
@@ -527,8 +543,8 @@
 			</tr>
 		</tbody>
 	</table>
-</div>
-
+</div> -->
+<!-- 
 <div class="col-12 py-5">
 	<h2 id="api-documentation">API Documentation</h2>
 	<p>
@@ -814,16 +830,16 @@
 				</tr>
 			</tbody>
 		</table>
-	</div>
+	</div> -->
 
-	<h3 class="mt-5">JSON Return Object</h3>
+	<!-- <h3 class="mt-5">JSON Return Object</h3>
 	<p>
 		On success a JSON object will be returned. Please note: the resulting JSON might be multiple
 		mega bytes in size.
 	</p>
 	<pre>
-      <code>
-{`
+      <code> -->
+<!-- {`
   "latitude": 52.52,
   "longitude": 13.419,
   "generationtime_ms": 2.2119,
@@ -838,8 +854,8 @@
   },
 `}
       </code>
-    </pre>
-
+    </pre> -->
+<!-- 
 	<div class="table-responsive">
 		<table class="table">
 			<thead>
@@ -906,9 +922,9 @@
   "reason": "Cannot initialize WeatherVariable from invalid String value tempeture_2m for key hourly"
 `}
       </code></pre>
-</div>
+</div> -->
 
-<h2 id="citation">Citation & Acknowledgement</h2>
+<!-- <h2 id="citation">Citation & Acknowledgement</h2>
 <p>
 	CMIP6 model data is licensed under a Creative Commons Attribution 4.0 International License (<a
 		href="https://creativecommons.org/licenses/">CC BY 4.0</a
@@ -924,4 +940,4 @@
 <p>
 	All users of Open-Meteo data must provide a clear attribution to the CMIP6 program as well as a
 	reference to Open-Meteo.
-</p>
+</p> -->

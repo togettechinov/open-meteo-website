@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>🌤️ Free Open-Source Weather API | Open-Meteo.com</title>
+	<title>MNOCC | ONACC - MC</title>
 	<link rel="canonical" href="https://open-meteo.com/" />
 	<meta
 		name="description"

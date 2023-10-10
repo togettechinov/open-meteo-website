@@ -4,33 +4,33 @@
 
 	const links = [
 		{
-			title: 'Weather Forecast',
+			title: 'Prévisions météorologiques',
 			url: '/en/docs',
 			children: [
-				{ title: 'DWD ICON', url: '/en/docs/dwd-api' },
-				{ title: 'NOAA GFS', url: '/en/docs/gfs-api' },
-				{ title: 'MeteoFrance', url: '/en/docs/meteofrance-api' },
-				{ title: 'ECMWF', url: '/en/docs/ecmwf-api' },
-				{ title: 'JMA', url: '/en/docs/jma-api' },
-				{ title: 'MET Norway', url: '/en/docs/metno-api' },
-				{ title: 'GEM', url: '/en/docs/gem-api' }
+				{ title: 'ONACC - DWD ICON', url: '/en/docs/dwd-api' },
+				{ title: 'ONACC - NOAA GFS', url: '/en/docs/gfs-api' },
+				// { title: 'MeteoFrance', url: '/en/docs/meteofrance-api' },
+				{ title: 'ONACC - ECMWF', url: '/en/docs/ecmwf-api' },
+				{ title: 'ONACC - JMA', url: '/en/docs/jma-api' },
+				{ title: 'ONACC - MET Norway', url: '/en/docs/metno-api' },
+				{ title: 'ONACC - GEM', url: '/en/docs/gem-api' }
 			]
 		},
-		{ title: 'Historical Weather', url: '/en/docs/historical-weather-api' },
+		{ title: 'Données historiques', url: '/en/docs/historical-weather-api' },
 		{ title: 'Ensemble Models', url: '/en/docs/ensemble-api' },
-    	{ title: 'Climate Change', url: '/en/docs/climate-api' },
-		{ title: 'Marine Forecast', url: '/en/docs/marine-weather-api' },
-		{ title: 'Air Quality', url: '/en/docs/air-quality-api' },
-		{ title: 'Geocoding', url: '/en/docs/geocoding-api' },
-		{ title: 'Elevation', url: '/en/docs/elevation-api' },
-		{ title: 'Flood', url: '/en/docs/flood-api' }
+    	{ title: 'Changement climatique', url: '/en/docs/climate-api' },
+		// { title: 'Prévisions maritimes', url: '/en/docs/marine-weather-api' },
+		// { title: 'Qualité de l\'air', url: '/en/docs/air-quality-api' },
+		// { title: 'Géocodage', url: '/en/docs/geocoding-api' },
+		// { title: 'Élévation', url: '/en/docs/elevation-api' },
+		{ title: 'Inondation', url: '/en/docs/flood-api' }
 	];
 	if (dev) {
-		links.push({ title: 'Seasonal Forecast API', url: '/en/docs/seasonal-forecast-api' });
+		links.push({ title: 'Prévisions saisonnières', url: '/en/docs/seasonal-forecast-api' });
 	}
 </script>
 
-<div
+<!-- <div
 	class="px-4 py-5 text-center text-white hero-banner"
 	style="background-image: url('{$page.data.hero}');"
 >
@@ -51,7 +51,7 @@
 	<div class="col-lg-6 mx-auto">
 		<p class="lead mb-4 hero-shadow">{$page.data.subtitle}</p>
 	</div>
-</div>
+</div> -->
 
 <div class="container-fluid">
 	<div class="row">
@@ -68,6 +68,7 @@
 					Available APIs
 				</button>
 			</div>
+
 			<nav id="sidebarMenu" class="sticky-top d-md-block collapse py-2 py-md-3 py-lg-4">
 				<ul class="list-unstyled">
 					{#each links as link}
@@ -94,6 +95,8 @@
 					{/each}
 				</ul>
 			</nav>
+
+			
 		</div>
 		<main class="col-md-9 col-lg-10 p-2 p-md-3 p-lg-4">
 			<slot />

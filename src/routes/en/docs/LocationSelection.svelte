@@ -123,16 +123,16 @@
 								aria-label="Timezone"
 								bind:value={timezone}
 							>
-								<option value="America/Anchorage">America/Anchorage</option>
+								<!-- <option value="America/Anchorage">America/Anchorage</option>
 								<option value="America/Los_Angeles">America/Los_Angeles</option>
 								<option value="America/Denver">America/Denver</option>
 								<option value="America/Chicago">America/Chicago</option>
 								<option value="America/New_York">America/New_York</option>
 								<option value="America/Sao_Paulo">America/Sao_Paulo</option>
 								<option value="UTC" selected>Not set (GMT+0)</option>
-								<option value="GMT">GMT+0</option>
+								<option value="GMT">GMT+0</option> -->
 								<option value="auto">Automatically detect time zone</option>
-								<option value="Europe/London">Europe/London</option>
+								<!-- <option value="Europe/London">Europe/London</option>
 								<option value="Europe/Berlin">Europe/Berlin</option>
 								<option value="Europe/Moscow">Europe/Moscow</option>
 								<option value="Africa/Cairo">Africa/Cairo</option>
@@ -140,7 +140,7 @@
 								<option value="Asia/Singapore">Asia/Singapore</option>
 								<option value="Asia/Tokyo">Asia/Tokyo</option>
 								<option value="Australia/Sydney">Australia/Sydney</option>
-								<option value="Pacific/Auckland">Pacific/Auckland</option>
+								<option value="Pacific/Auckland">Pacific/Auckland</option> -->
 							</select>
 							<label for="timezone">Timezone</label>
 							{#if timezoneInvalid}

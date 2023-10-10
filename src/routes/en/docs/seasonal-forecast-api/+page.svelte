@@ -306,7 +306,7 @@
 </form>
 
 <ResultPreview {params} {defaultParameter} type="seasonal" action="seasonal" />
-
+<!-- 
 <div class="col-12 py-5">
 	<h2 id="api-documentation">API Documentation</h2>
 	<p>
@@ -663,4 +663,4 @@
 
 This service is based on data and products of the European Centre for Medium-Range Weather Forecasts
 (ECMWF). Source www.ecmwf.int. ECMWF does not accept any liability whatsoever for any error or
-omission in the data, their availability, or for any loss or damage arising from their use.
+omission in the data, their availability, or for any loss or damage arising from their use. -->

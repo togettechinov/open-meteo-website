@@ -364,7 +364,7 @@
 </script>
 
 <div class="col-12 my-4">
-	<h2>Preview and API URL</h2>
+	<h2>Preview</h2>
 
 	<div id="container w-100">
 		{#await results}
@@ -393,9 +393,9 @@
 					<div class="alert alert-primary d-flex align-items-center" role="alert">
 						<InfoCircle class="me-2" />
 						<div>
-							Parameters have changed.
+							Les paramètres ont changé.
 							<button type="submit" class="btn btn-primary ms-2" on:click={reload}
-								><ArrowClockwise class="me-2" />Reload Chart
+								><ArrowClockwise class="me-2" />Recharger le graphique
 							</button>
 						</div>
 					</div>
@@ -410,7 +410,7 @@
 					<ExclamationTriangle class="me-2" />
 					<div>{error.message}</div>
 					<button type="submit" class="btn btn-danger ms-2" on:click={reload}
-						><ArrowClockwise class="me-2" />Reload Chart
+						><ArrowClockwise class="me-2" />Recharger le graphique
 					</button>
 				</div>
 			</div>
@@ -418,15 +418,15 @@
 	</div>
 </div>
 <div class="col-12">
-	<a href={xlsxUrl} class="btn btn-outline-primary">Download XLSX</a>
-	<a href={csvUrl} class="btn btn-outline-primary">Download CSV</a>
+	<a href={xlsxUrl} class="btn btn-outline-primary">Télécharger XLSX</a>
+	<a href={csvUrl} class="btn btn-outline-primary">Télécharger CSV</a>
 </div>
 
-<div class="col-12 my-4">
+<!-- <div class="col-12 my-4">
 	<label for="api_url" class="form-label">API URL</label>
 	<small class="text-muted"
 		>(<a id="api_url_link" target="_blank" href={previewUrl}>Open in new tab</a> or copy this URL into
 		your application)</small
 	>
 	<input type="text" class="form-control" id="api_url" readonly bind:value={previewUrl} />
-</div>
+</div> -->

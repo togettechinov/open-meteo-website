@@ -8,7 +8,7 @@
     <div>
         <ul class="nav nav-underline" role="tablist">
             <li class="nav-item" role="presentation">
-                <span class="nav-link disabled" aria-disabled="true">Usage License:</span>
+                <!-- <span class="nav-link disabled" aria-disabled="true">Usage License:</span> -->
             </li>
             <li class="nav-item" role="presentation">
                 <button
@@ -19,7 +19,7 @@
                     role="tab"
                     aria-controls="pills-non_commercial"
                     aria-selected="true"
-                    on:click={() => ($api_key_preferences.use = 'non_commercial')}>Non-Commercial</button
+                    on:click={() => ($api_key_preferences.use = 'non_commercial')}>ONACC-MC</button
                 >
             </li>
             <li class="nav-item" role="presentation">
@@ -31,7 +31,7 @@
                     role="tab"
                     aria-controls="pills-commercial"
                     on:click={() => ($api_key_preferences.use = 'commercial')}
-                    aria-selected="true">Commercial</button
+                    aria-selected="true"></button
                 >
             </li>
             <li class="nav-item" role="presentation">
@@ -43,7 +43,7 @@
                     role="tab"
                     aria-controls="pills-self_hosted"
                     on:click={() => ($api_key_preferences.use = 'self_hosted')}
-                    aria-selected="true">Self-Hosted</button
+                    aria-selected="true"></button
                 >
             </li>
         </ul>
@@ -59,9 +59,9 @@
                 aria-labelledby="pills-non_commercial-tab"
                 tabindex="0"
             >
-                <div class="col-md-12">
-                    <div class=" alert alert-info" role="alert">Only for <strong>non-commercial use</strong> and less than 10.000 daily API calls. See <a href="/en/terms">Terms</a> for more details.</div>
-                </div>
+                <!-- <div class="col-md-12">
+                     <div class=" alert alert-info" role="alert">Only for <strong>non-commercial use</strong> and less than 10.000 daily API calls. See <a href="/en/terms">Terms</a> for more details.</div> 
+                </div> -->
             </div>
         {/if}
         {#if $api_key_preferences.use == 'commercial'}

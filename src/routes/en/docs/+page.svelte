@@ -256,7 +256,7 @@
 </script>
 
 <svelte:head>
-	<title>🌦️ Docs | Open-Meteo.com</title>
+	<title>Docs | MNOCC</title>
 	<link rel="canonical" href="https://open-meteo.com/en/docs" />
 	<meta
 		name="description"
@@ -665,7 +665,7 @@
 		{/each}
 		<div class="col-md-12">
 			<small class="text-muted"
-				>Note: Current conditions are based on 15-minutely weather model data. Every weather variable available in hourly data, is available as current condition as well.</small
+				>Remarque : Les conditions actuelles sont basées sur les données d'un modèle météorologique de 15 minutes. Chaque variable météo disponible dans les données horaires est également disponible en tant que condition actuelle..</small
 			>
 		</div>
 	</div>
@@ -742,8 +742,8 @@
 <ResultPreview {params} {defaultParameter} />
 
 <div class="col-12 py-5">
-	<h2 id="data-sources">Data Source</h2>
-	<p>
+	<h2 id="data-sources">Sources de données</h2>
+	<!-- <p>
 		Open-Meteo weather forecast APIs use weather models from multiple national weather providers.
 		For each location worldwide, the best models will be combined to provide the best possible
 		forecast.
@@ -753,7 +753,7 @@
 		weather variables. Depending on the model, data have been interpolated to hourly values or not
 		all weather variables are available. With the drop down <mark>Weather models</mark> (just below the
 		hourly variables), you can select and compare individual weather models.
-	</p>
+	</p> -->
 	<div class="table-responsive">
 		<table class="table">
 			<thead>
@@ -783,14 +783,14 @@
 					<td>16 days</td>
 					<td>Every hour</td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<th scope="row"><a href="/en/docs/meteofrance-api">Arpege & Arome</a></th>
 					<td>MeteoFrance</td>
 					<td>France</td>
 					<td>1 - 40 km</td>
 					<td>4 days</td>
 					<td>Every 6 hours</td>
-				</tr>
+				</tr> -->
 				<tr>
 					<th scope="row"><a href="/en/docs/ecmwf-api">IFS</a></th>
 					<td>ECMWF</td>
@@ -823,10 +823,18 @@
 					<td>10 days</td>
 					<td>Every 6 hours</td>
 				</tr>
+				<tr>
+					<th scope="row"><a href="/en/docs/ecmwf-api">ONACC-MC</a></th>
+					<td>Direction de la Météorologie Nationale (DMN)</td>
+					<td>Cameroun</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
-
+<!-- 
 	<h2 id="api-documentation" class="mt-5">API Documentation</h2>
 	<p>
 		The API endpoint <mark>/v1/forecast</mark> accepts a geographical coordinate, a list of weather
@@ -1029,9 +1037,9 @@
 	<p>
 		Additional optional URL parameters will be added. For API stability, no required parameters will
 		be added in the future!
-	</p>
+	</p> -->
 
-	<h3 class="mt-5">Hourly Parameter Definition</h3>
+	<!-- <h3 class="mt-5">Hourly Parameter Definition</h3>
 	<p>
 		The parameter <mark>&hourly=</mark> accepts the following values. Most weather variables are given
 		as an instantaneous value for the indicated hour. Some variables like precipitation are calculated
@@ -1300,9 +1308,9 @@
 				</tr>
 			</tbody>
 		</table>
-	</div>
+	</div> -->
 
-	<h3 class="mt-5">15-Minutely Parameter Definition</h3>
+	<!-- <h3 class="mt-5">15-Minutely Parameter Definition</h3>
 	<p>
 		The parameter <mark>&minutely_15=</mark> can be used to get 15-minutely data. This data is based
 		on NOAA HRRR model for North America and DWD ICON-D2 model for Central Europe. If 15-minutely data is requested
@@ -1471,19 +1479,19 @@
 				
 			</tbody>
 		</table>
-	</div>
+	</div> -->
 
-	<h3 class="mt-5">Pressure Level Variables</h3>
+	<!-- <h3 class="mt-5">Pressure Level Variables</h3>
 	<p>
 		Pressure level variables do not have fixed altitudes. Altitude varies with atmospheric pressure.
 		1000 hPa is roughly between 60 and 160 meters above sea level. Estimated altitudes are given
 		below. Altitudes are in meters above sea level (not above ground). For precise altitudes, <mark
 			>geopotential_height</mark
 		> can be used.
-	</p>
-	<PressureLevelsHelpTable {levels} />
+	</p> -->
+	<!-- <PressureLevelsHelpTable {levels} /> -->
 
-	<p>All pressure level have valid times of the indicated hour (instant).</p>
+	<!-- <p>All pressure level have valid times of the indicated hour (instant).</p>
 	<div class="table-responsive">
 		<table class="table">
 			<thead>
@@ -1655,22 +1663,22 @@
 	<p>On success a JSON object will be returned.</p>
 	<pre>
       <code>
-{`
-  "latitude": 52.52,
-  "longitude": 13.419,
-  "elevation": 44.812,
-  "generationtime_ms": 2.2119,
-  "utc_offset_seconds": 0,
-  "timezone": "Europe/Berlin",
-  "timezone_abbreviation": "CEST",
-  "hourly": {
-    "time": ["2022-07-01T00:00", "2022-07-01T01:00", "2022-07-01T02:00", ...],
-    "temperature_2m": [13, 12.7, 12.7, 12.5, 12.5, 12.8, 13, 12.9, 13.3, ...]
-  },
-  "hourly_units": {
-    "temperature_2m": "°C"
-  }
-`}
+			{`
+			"latitude": 52.52,
+			"longitude": 13.419,
+			"elevation": 44.812,
+			"generationtime_ms": 2.2119,
+			"utc_offset_seconds": 0,
+			"timezone": "Europe/Berlin",
+			"timezone_abbreviation": "CEST",
+			"hourly": {
+				"time": ["2022-07-01T00:00", "2022-07-01T01:00", "2022-07-01T02:00", ...],
+				"temperature_2m": [13, 12.7, 12.7, 12.5, 12.5, 12.8, 13, 12.9, 13.3, ...]
+			},
+			"hourly_units": {
+				"temperature_2m": "°C"
+			}
+			`}
       </code>
     </pre>
 
@@ -1761,19 +1769,19 @@
 	</p>
 	<pre>
       <code>
-{`
-  "error": true,
-  "reason": "Cannot initialize WeatherVariable from invalid String value tempeture_2m for key hourly"
-`}
+			{`
+			"error": true,
+			"reason": "Cannot initialize WeatherVariable from invalid String value tempeture_2m for key hourly"
+			`}
       </code>
-    </pre>
+    </pre> -->
 </div>
 
-<div class="col-12 py-5">
+<!-- <div class="col-12 py-5">
 	<h2 id="weathervariables">Weather variable documentation</h2>
-</div>
+</div> -->
 
-<div class="col-6">
+<!-- <div class="col-6">
 	<h3>WMO Weather interpretation codes (WW)</h3>
 	<div class="table-responsive">
 		<table class="table">
@@ -1840,4 +1848,4 @@
 		</table>
 	</div>
 	<p>(*) Thunderstorm forecast with hail is only available in Central Europe</p>
-</div>
+</div> -->
