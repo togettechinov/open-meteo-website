@@ -188,7 +188,7 @@
 			<div class="modal-content">
 				<div class="modal-header no-border">
 					<label for="location_search" id="locationSearchModalLabel"
-						><span class="lead">Search Locations</span></label
+						><span class="lead">Rechercher des emplacements</span></label
 					>
 					<button
 						type="button"
@@ -280,7 +280,7 @@
 									</div>
 								{/if}
 								{#if $last_visited.length > 0}
-									<h6 class="lead mt-4">Recent Locations</h6>
+									<h6 class="lead mt-4">Emplacements récents</h6>
 									<div class="list-group">
 										{#each $last_visited as location}
 											<button

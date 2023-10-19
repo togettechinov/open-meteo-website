@@ -62,52 +62,52 @@
 		[
 			{ name: 'temperature_2m', label: 'Temperature (2 m)' },
 			{ name: 'relativehumidity_2m', label: 'Relative Humidity (2 m)' },
-			{ name: 'dewpoint_2m', label: 'Dewpoint (2 m)' },
+			// { name: 'dewpoint_2m', label: 'Dewpoint (2 m)' },
 			{ name: 'apparent_temperature', label: 'Apparent Temperature' },
-			{ name: 'precipitation_probability', label: 'Precipitation Probability' },
+			// { name: 'precipitation_probability', label: 'Precipitation Probability' },
 			{ name: 'precipitation', label: 'Precipitation (rain + showers + snow)' },
 			{ name: 'rain', label: 'Rain' },
-			{ name: 'showers', label: 'Showers' },
-			{ name: 'snowfall', label: 'Snowfall' },
-			{ name: 'snow_depth', label: 'Snow Depth' }
+			// { name: 'showers', label: 'Showers' },
+			// { name: 'snowfall', label: 'Snowfall' },
+			// { name: 'snow_depth', label: 'Snow Depth' }
 		],
 		[
 			{ name: 'weathercode', label: 'Weathercode' },
 			{ name: 'pressure_msl', label: 'Sealevel Pressure' },
 			{ name: 'surface_pressure', label: 'Surface Pressure' },
-			{ name: 'cloudcover', label: 'Cloudcover Total' },
-			{ name: 'cloudcover_low', label: 'Cloudcover Low' },
-			{ name: 'cloudcover_mid', label: 'Cloudcover Mid' },
-			{ name: 'cloudcover_high', label: 'Cloudcover High' },
-			{ name: 'visibility', label: 'Visibility' },
+			// { name: 'cloudcover', label: 'Cloudcover Total' },
+			// { name: 'cloudcover_low', label: 'Cloudcover Low' },
+			// { name: 'cloudcover_mid', label: 'Cloudcover Mid' },
+			// { name: 'cloudcover_high', label: 'Cloudcover High' },
+			// { name: 'visibility', label: 'Visibility' },
 			{ name: 'evapotranspiration', label: 'Evapotranspiration' },
 			{ name: 'et0_fao_evapotranspiration', label: 'Reference Evapotranspiration (ET₀)' },
-			{ name: 'vapor_pressure_deficit', label: 'Vapor Pressure Deficit' }
+			// { name: 'vapor_pressure_deficit', label: 'Vapor Pressure Deficit' }
 		],
 		[
-			{ name: 'windspeed_10m', label: 'Wind Speed (10 m)' },
-			{ name: 'windspeed_80m', label: 'Wind Speed (80 m)' },
-			{ name: 'windspeed_120m', label: 'Wind Speed (120 m)' },
-			{ name: 'windspeed_180m', label: 'Wind Speed (180 m)' },
-			{ name: 'winddirection_10m', label: 'Wind Direction (10 m)' },
-			{ name: 'winddirection_80m', label: 'Wind Direction (80 m)' },
-			{ name: 'winddirection_120m', label: 'Wind Direction (120 m)' },
-			{ name: 'winddirection_180m', label: 'Wind Direction (180 m)' },
-			{ name: 'windgusts_10m', label: 'Wind Gusts (10 m)' },
-			{ name: 'temperature_80m', label: 'Temperature (80 m)' },
-			{ name: 'temperature_120m', label: 'Temperature (120 m)' },
-			{ name: 'temperature_180m', label: 'Temperature (180 m)' }
+			// { name: 'windspeed_10m', label: 'Wind Speed (10 m)' },
+			// { name: 'windspeed_80m', label: 'Wind Speed (80 m)' },
+			// { name: 'windspeed_120m', label: 'Wind Speed (120 m)' },
+			// { name: 'windspeed_180m', label: 'Wind Speed (180 m)' },
+			// { name: 'winddirection_10m', label: 'Wind Direction (10 m)' },
+			// { name: 'winddirection_80m', label: 'Wind Direction (80 m)' },
+			// { name: 'winddirection_120m', label: 'Wind Direction (120 m)' },
+			// { name: 'winddirection_180m', label: 'Wind Direction (180 m)' },
+			// { name: 'windgusts_10m', label: 'Wind Gusts (10 m)' },
+			// { name: 'temperature_80m', label: 'Temperature (80 m)' },
+			// { name: 'temperature_120m', label: 'Temperature (120 m)' },
+			// { name: 'temperature_180m', label: 'Temperature (180 m)' }
 		],
 		[
-			{ name: 'soil_temperature_0cm', label: 'Soil Temperature (0 cm)' },
-			{ name: 'soil_temperature_6cm', label: 'Soil Temperature (6 cm)' },
-			{ name: 'soil_temperature_18cm', label: 'Soil Temperature (18 cm)' },
-			{ name: 'soil_temperature_54cm', label: 'Soil Temperature (54 cm)' },
-			{ name: 'soil_moisture_0_to_1cm', label: 'Soil Moisture (0-1 cm)' },
-			{ name: 'soil_moisture_1_to_3cm', label: 'Soil Moisture (1-3 cm)' },
-			{ name: 'soil_moisture_3_to_9cm', label: 'Soil Moisture (3-9 cm)' },
-			{ name: 'soil_moisture_9_to_27cm', label: 'Soil Moisture (9-27 cm)' },
-			{ name: 'soil_moisture_27_to_81cm', label: 'Soil Moisture (27-81 cm)' }
+			// { name: 'soil_temperature_0cm', label: 'Soil Temperature (0 cm)' },
+			// { name: 'soil_temperature_6cm', label: 'Soil Temperature (6 cm)' },
+			// { name: 'soil_temperature_18cm', label: 'Soil Temperature (18 cm)' },
+			// { name: 'soil_temperature_54cm', label: 'Soil Temperature (54 cm)' },
+			// { name: 'soil_moisture_0_to_1cm', label: 'Soil Moisture (0-1 cm)' },
+			// { name: 'soil_moisture_1_to_3cm', label: 'Soil Moisture (1-3 cm)' },
+			// { name: 'soil_moisture_3_to_9cm', label: 'Soil Moisture (3-9 cm)' },
+			// { name: 'soil_moisture_9_to_27cm', label: 'Soil Moisture (9-27 cm)' },
+			// { name: 'soil_moisture_27_to_81cm', label: 'Soil Moisture (27-81 cm)' }
 		]
 	];
 
@@ -163,7 +163,7 @@
 
 	const daily = [
 		[
-			{ name: 'weathercode', label: 'Weathercode' },
+			// { name: 'weathercode', label: 'Weathercode' },
 			{ name: 'temperature_2m_max', label: 'Maximum Temperature (2 m)' },
 			{ name: 'temperature_2m_min', label: 'Minimum Temperature (2 m)' },
 			{ name: 'apparent_temperature_max', label: 'Maximum Apparent Temperature (2 m)' },
@@ -289,7 +289,7 @@
 						role="tab"
 						aria-controls="pills-forecast_days"
 						aria-selected="true"
-						on:click={() => ($params.time_mode = 'forecast_days')}><Clock /> Forecast Length</button
+						on:click={() => ($params.time_mode = 'forecast_days')}><Clock /> Longueur de prévision</button
 					>
 				</li>
 				<li class="nav-item" role="presentation">
@@ -301,7 +301,7 @@
 						role="tab"
 						aria-controls="pills-time_interval"
 						on:click={() => ($params.time_mode = 'time_interval')}
-						aria-selected="true"><CalendarEvent /> Time Interval</button
+						aria-selected="true"><CalendarEvent /> Intervalle de temps</button
 					>
 				</li>
 			</ul>
@@ -332,7 +332,7 @@
 									<option value="14">14 days</option>
 									<option value="16">16 days</option>
 								</select>
-								<label for="forecast_days">Forecast days</label>
+								<label for="forecast_days">Jours de prévision</label>
 							</div>
 						</div>
 						<div class="col-md-3">
@@ -359,13 +359,13 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<p>
+							<!-- <p>
 								By default, we provide forecasts for 7 days, but you can access forecasts for up to
 								16 days. If you're interested in past weather data, you can use the <mark
 									>Past Days</mark
 								>
 								feature to access archived forecasts.
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
@@ -401,7 +401,7 @@
 	</div>
 
 	<div class="row py-3 px-0">
-		<h2>Hourly Weather Variables</h2>
+		<!-- <h2>Hourly Weather Variables</h2> -->
 		{#each hourly as group}
 			<div class="col-md-3">
 				{#each group as e}
@@ -621,10 +621,10 @@
 				</div>
 			</AccordionItem>
 		</div>
-	</div>
+	</div> 
 
 	<div class="row py-3 px-0">
-		<h2>Daily Weather Variables</h2>
+		<h2>Variables météorologiques (quotidiennes)</h2>
 		{#each daily as group}
 			<div class="col-md-6">
 				{#each group as e}
@@ -671,7 +671,7 @@
 	</div>
 
 	<div class="row py-3 px-0">
-		<h2>Settings</h2>
+		<h2>Paramètres</h2>
 		<div class="col-md-3">
 			<div class="form-floating mb-3">
 				<select
@@ -747,8 +747,8 @@
 		Open-Meteo weather forecast APIs use weather models from multiple national weather providers.
 		For each location worldwide, the best models will be combined to provide the best possible
 		forecast.
-	</p>
-	<p>
+	</p> -->
+	<!-- <p>
 		Weather models cover different geographic areas at different resolutions and provide different
 		weather variables. Depending on the model, data have been interpolated to hourly values or not
 		all weather variables are available. With the drop down <mark>Weather models</mark> (just below the
@@ -783,14 +783,14 @@
 					<td>16 days</td>
 					<td>Every hour</td>
 				</tr>
-				<!-- <tr>
+				<tr>
 					<th scope="row"><a href="/en/docs/meteofrance-api">Arpege & Arome</a></th>
 					<td>MeteoFrance</td>
 					<td>France</td>
 					<td>1 - 40 km</td>
 					<td>4 days</td>
 					<td>Every 6 hours</td>
-				</tr> -->
+				</tr>
 				<tr>
 					<th scope="row"><a href="/en/docs/ecmwf-api">IFS</a></th>
 					<td>ECMWF</td>

@@ -4,21 +4,21 @@
 
 	const links = [
 		{
-			title: 'Prévisions météorologiques',
+			title: 'Prévisions climatiques',
 			url: '/en/docs',
 			children: [
-				{ title: 'ONACC - DWD ICON', url: '/en/docs/dwd-api' },
-				{ title: 'ONACC - NOAA GFS', url: '/en/docs/gfs-api' },
-				// { title: 'MeteoFrance', url: '/en/docs/meteofrance-api' },
-				{ title: 'ONACC - ECMWF', url: '/en/docs/ecmwf-api' },
-				{ title: 'ONACC - JMA', url: '/en/docs/jma-api' },
-				{ title: 'ONACC - MET Norway', url: '/en/docs/metno-api' },
-				{ title: 'ONACC - GEM', url: '/en/docs/gem-api' }
-			]
+			// { title: 'ONACC - DWD ICON', url: '/en/docs/dwd-api' },
+			 { title: 'ONACC - NOAA GFS', url: '/en/docs/gfs-api' },
+			//  { title: 'MeteoFrance', url: '/en/docs/meteofrance-api' },
+			//  { title: 'ONACC - ECMWF', url: '/en/docs/ecmwf-api' },
+			//  { title: 'ONACC - JMA', url: '/en/docs/jma-api' },
+			//  { title: 'ONACC - MET Norway', url: '/en/docs/metno-api' },
+			//  { title: 'ONACC - GEM', url: '/en/docs/gem-api' }
+			 ]
 		},
 		{ title: 'Données historiques', url: '/en/docs/historical-weather-api' },
 		{ title: 'Ensemble Models', url: '/en/docs/ensemble-api' },
-    	{ title: 'Changement climatique', url: '/en/docs/climate-api' },
+    	{ title: 'Climat - Projections', url: '/en/docs/climate-api' },
 		// { title: 'Prévisions maritimes', url: '/en/docs/marine-weather-api' },
 		// { title: 'Qualité de l\'air', url: '/en/docs/air-quality-api' },
 		// { title: 'Géocodage', url: '/en/docs/geocoding-api' },

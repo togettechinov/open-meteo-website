@@ -32,13 +32,13 @@
 
 	const daily = [
 		[
-			{ name: 'river_discharge', label: 'River Discharge' },
-			{ name: 'river_discharge_mean', label: 'River Discharge Mean' },
-			{ name: 'river_discharge_median', label: 'River Discharge Median' },
-			{ name: 'river_discharge_max', label: 'River Discharge Maximum' },
-			{ name: 'river_discharge_min', label: 'River Discharge Minimum' },
-			{ name: 'river_discharge_p25', label: 'River Discharge 25<sup>th</sup> Percentile' },
-			{ name: 'river_discharge_p75', label: 'River Discharge 75<sup>th</sup> Percentile' }
+			{ name: 'river_discharge', label: 'Débit fluvial' },
+			{ name: 'river_discharge_mean', label: 'Débit moyen de la rivière' },
+			{ name: 'river_discharge_median', label: 'Médiane du débit fluvial' },
+			{ name: 'river_discharge_max', label: 'Débit maximal de la rivière' },
+			{ name: 'river_discharge_min', label: 'Débit minimum de la rivière' },
+			{ name: 'river_discharge_p25', label: 'Débit fluvial, 25<sup>ème</sup> centile' },
+			{ name: 'river_discharge_p75', label: 'Débit fluvial, 75<sup>ème</sup> centile' }
 		]
 	];
 
@@ -57,7 +57,7 @@
 </script>
 
 <svelte:head>
-	<title>Flood API | Open-Meteo.com</title>
+	<title>MNOCC - FLOOD | MNOCC</title>
 	<link rel="canonical" href="https://open-meteo.com/en/docs/flood-api" />
 	<meta
 		name="description"
@@ -181,7 +181,7 @@
 	</div>
 
 	<div class="row py-3 px-0">
-		<h2>Daily Weather Variables</h2>
+		<h2>Variables météorologiques</h2>
 		{#each daily as group}
 			<div class="col-md-6">
 				{#each group as e}
@@ -245,10 +245,10 @@
 				{/each}
 				<div class="col-md-12">
 					<p>
-						<small class="text-muted"
+						<!-- <small class="text-muted"
 							>Note: <mark>Seamless</mark> combines forecast and consolidated historical data. Per default,
 							GloFAS version 4 with data from 1984 up to 7 months of forecast is used.</small
-						>
+						> -->
 					</p>
 				</div>
 			</AccordionItem>
@@ -280,19 +280,19 @@
 <ResultPreview {params} {defaultParameter} type="flood" action="flood" />
 
 <div class="col-12 py-5">
-	<h2 id="data-sources">Data Source</h2>
-	<p>
+	<h2 id="data-sources">Sources de données</h2>
+	<!-- <p>
 		This API uses reanalysis and forecast data from the <a
 			href="https://www.globalfloods.eu"
 			target="_blank">Global Flood Awareness System (GloFAS)</a
 		>. Per default, GloFAS version 4 with seamless data from 1984 until 7 months of forecast is
 		used.
-	</p>
-	<p>
+	</p> -->
+	<!-- <p>
 		Please note: Due to the 5 km resolution the closest river might not be selected correctly.
 		Varying coordiantes by 0.1° can help to get a more representable discharge rate. The GloFAS
 		website provides additional maps to help understand how rivers are covered in this dataset.
-	</p>
+	</p> -->
 	<div class="table-responsive">
 		<table class="table">
 			<thead>
@@ -384,13 +384,13 @@
 		</table>
 	</div>
 
-	<h2 id="api-documentation" class="mt-5">API Documentation</h2>
+	<!-- <h2 id="api-documentation" class="mt-5">API Documentation</h2>
 	<p>
 		The API endpoint <mark>/v1/flood</mark> accepts a geographical coordinate and returns river discharge
 		data from the largest river in a 5 km area for the given coordinates. All URL parameters are listed
 		below:
-	</p>
-	<div class="table-responsive">
+	</p> -->
+	<!-- <div class="table-responsive">
 		<table class="table">
 			<thead>
 				<tr>
@@ -499,13 +499,13 @@
 				</tr>
 			</tbody>
 		</table>
-	</div>
-	<p>
+	</div> -->
+	<!-- <p>
 		Additional optional URL parameters will be added. For API stability, no required parameters will
 		be added in the future!
-	</p>
+	</p> -->
 
-	<h3 class="mt-5">Daily Parameter Definition</h3>
+	<!-- <h3 class="mt-5">Daily Parameter Definition</h3>
 	<p>The parameter <mark>&daily=</mark> accepts the following values:</p>
 	<div class="table-responsive">
 		<table class="table">
@@ -612,5 +612,5 @@
   "reason": "Cannot initialize WeatherVariable from invalid String value tempeture_2m for key hourly"
 `}
       </code>
-    </pre>
+    </pre> -->
 </div>

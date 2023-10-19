@@ -27,11 +27,11 @@
 	}
 </script>
 
-<h2>Location and Time</h2>
+<h2>Lieu et période</h2>
 <div>
 	<ul class="nav nav-underline" id="pills-tab" role="tablist">
 		<li class="nav-item" role="presentation" style="width: 70px;">
-			<span class="nav-link disabled" aria-disabled="true">Location:</span>
+			<span class="nav-link disabled" aria-disabled="true">Localité:</span>
 		</li>
 		<li class="nav-item" role="presentation">
 			<button
@@ -42,7 +42,7 @@
 				role="tab"
 				aria-controls="pills-location_search"
 				aria-selected="true"
-				on:click={() => (location_mode = 'location_search')}><GeoAltFill /> Coordinates</button
+				on:click={() => (location_mode = 'location_search')}><GeoAltFill /> Coordonnées</button
 			>
 		</li>
 		<li class="nav-item" role="presentation">
@@ -54,7 +54,7 @@
 				role="tab"
 				aria-controls="pills-csv_coordinates"
 				on:click={() => (location_mode = 'csv_coordinates')}
-				aria-selected="true"><List/> List</button
+				aria-selected="true"><List/> Liste</button
 			>
 		</li>
 	</ul>
@@ -198,13 +198,13 @@
 					/>
 				</div>
 				<div class="col-md-6 mb-3">
-					<p>
-						You can provide multiple coordinates. One per line and separated by commas. For each location, you can also set a time period if needed. Format:
-						latitude, longitude, elevation, timezone, start_date, end_date. Only latitude and longitude are required. Examples:
+					<!-- <p>
+						Vous pouvez fournir plusieurs coordonnées. Un par ligne et séparé par des virgules. Pour chaque emplacement, vous pouvez également définir une période horaire si nécessaire. Format:
+						latitude, longitude, altitude, fuseau horaire, date_début, date_fin. Seules la latitude et la longitude sont requises. Exemples:
 					</p>
 					<pre>52.52,13.41
 51.5085,-0.1257,,auto
-52.52,13.41,,Europe/Berlin,2021-01-01,2021-01-31</pre>
+52.52,13.41,,Europe/Berlin,2021-01-01,2021-01-31</pre> -->
 				</div>
 			</div>
 		</div>

@@ -214,16 +214,18 @@
 </script>
 
 <svelte:head>
-	<title>GFS & HRRR API | Open-Meteo.com</title>
+	<title>ONACC GFS & HRRR API | Open-Meteo.com</title>
 	<link rel="canonical" href="https://open-meteo.com/en/docs/gfs-api" />
 </svelte:head>
 
 <div class="alert alert-primary" role="alert">
-	By combining the reliable NOAA GFS weather model with the rapid updating HRRR weather model, this
+	<!-- By combining the reliable NOAA GFS weather model with the rapid updating HRRR weather model, this
 	API provides unrivaled forecasts for the US region. For a global forecast, the <a href="/en/docs"
 		>Weather Forecast API</a
-	> selects the most suitable weather models automatically to ensure optimal accuracy.
+	> selects the most suitable weather models automatically to ensure optimal accuracy. -->
+	ONACC weather - FORECASTS
 </div>
+
 
 <form method="get" action="https://api.open-meteo.com/v1/gfs">
 	<LocationSelection
@@ -536,7 +538,7 @@
 	</div>
 
 	<div class="row py-3 px-0">
-		<h2>Daily Weather Variables</h2>
+		<h2>Variables météorologiques (quotidiennes)</h2>
 		{#each daily as group}
 			<div class="col-md-6">
 				{#each group as e}
@@ -655,12 +657,12 @@
 
 <div class="col-12 py-5">
 	<h2 id="data-sources">Data Source</h2>
-	<p>
+	<!-- <p>
 		This API uses global NOAA GFS weather forecast and combines them with high-resolution HRRR
 		forecasts. HRRR is a rapid-refresh model and updates every hour. High-resolution data are only
 		available for the United States. For other locations, only GFS is used. For GFS, values are
 		interpolated from 3-hourly to 1-hourly after 120 hours.
-	</p>
+	</p> -->
 	<div class="table-responsive">
 		<table class="table">
 			<thead>
@@ -714,19 +716,30 @@
 					<td>18 hours (48 hours for 0, 6, 12, 18z)</td>
 					<td>Every hour</td>
 				</tr>
+
+				<tr>
+					<th scope="row"
+						><a href="#" target="">ONACC-MC</a></th
+					>
+					<td>Cameroun</td>
+					<td>5 km</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
 
-	<h2 id="api-documentation" class="mt-5">API Documentation</h2>
+	<!-- <h2 id="api-documentation" class="mt-5">API Documentation</h2>
 	<p>
 		The API endpoint <mark>/v1/gfs</mark> accepts a geographical coordinate, a list of weather
 		variables and responds with a JSON hourly weather forecast for 7 days. Time always starts at
 		0:00 today and contains 168 hours. If
 		<mark>&forecast_days=16</mark> is set, up to 16 days of forecast can be returned. All URL parameters
 		are listed below:
-	</p>
-	<div class="table-responsive">
+	</p> -->
+	<!-- <div class="table-responsive">
 		<table class="table">
 			<thead>
 				<tr>
@@ -904,19 +917,19 @@
 				</tr>
 			</tbody>
 		</table>
-	</div>
-	<p>
+	</div> -->
+	<!-- <p>
 		Additional optional URL parameters will be added. For API stability, no required parameters will
 		be added in the future!
-	</p>
+	</p> -->
 
-	<h3 class="mt-5">Hourly Parameter Definition</h3>
+	<!-- <h3 class="mt-5">Hourly Parameter Definition</h3>
 	<p>
 		The parameter <mark>&hourly=</mark> accepts the following values. Most weather variables are given
 		as an instantaneous value for the indicated hour. Some variables like precipitation are calculated
 		from the preceding hour as an average or sum.
-	</p>
-	<div class="table-responsive">
+	</p> -->
+	<!-- <div class="table-responsive">
 		<table class="table">
 			<thead>
 				<tr>
@@ -1109,7 +1122,7 @@
 						simulations are computed to better represent future weather conditions.</td
 					>
 				</tr>
-				<!--<tr>
+				<tr>
               <th scope="row">rain</th>
               <td>Preceding hour sum</td>
               <td>mm (inch)</td>
@@ -1126,7 +1139,7 @@
               <td>Instant</td>
               <td>WMO code</td>
               <td>Weather condition as a numeric code. Follow WMO weather interpretation codes. See table below for details.</td>
-            </tr>-->
+            </tr>
 				<tr>
 					<th scope="row">snow_depth</th>
 					<td>Instant</td>
@@ -1206,8 +1219,8 @@
 	<p>
 		15-minutely data can be requested for other weather variables that are available for hourly
 		data, but will use interpolation.
-	</p>
-	<div class="table-responsive">
+	</p> -->
+	<!-- <div class="table-responsive">
 		<table class="table">
 			<thead>
 				<tr>
@@ -1342,19 +1355,19 @@
 				</tr>
 			</tbody>
 		</table>
-	</div>
+	</div> -->
 
-	<h3 class="mt-5">Pressure Level Variables</h3>
+	<!-- <h3 class="mt-5">Pressure Level Variables</h3>
 	<p>
 		Pressure level variables do not have fixed altitudes. Altitude varies with atmospheric pressure.
 		1000 hPa is roughly between 60 and 160 meters above sea level. Estimated altitudes are given
 		below. Altitudes are in meters above sea level (not above ground). For precise altitudes, <mark
 			>geopotential_height</mark
 		> can be used.
-	</p>
-	<PressureLevelsHelpTable {levels} />
+	</p> -->
+	<!-- <PressureLevelsHelpTable {levels} /> -->
 
-	<p>All pressure level have valid times of the indicated hour (instant).</p>
+	<!-- <p>All pressure level have valid times of the indicated hour (instant).</p>
 	<div class="table-responsive">
 		<table class="table">
 			<thead>
@@ -1462,7 +1475,7 @@
               <th scope="row">showers_sum</th>
               <td>mm</td>
               <td>Sum of daily showers</td>
-            </tr>-->
+            </tr>
 				<tr>
 					<th scope="row">snowfall_sum</th>
 					<td>cm</td>
@@ -1481,11 +1494,11 @@
 					<td>%</td>
 					<td>Probability of precipitation</td>
 				</tr>
-				<!--<tr>
+				<tr>
               <th scope="row">weathercode</th>
               <td>WMO code</td>
               <td>The most severe weather condition on a given day</td>
-            </tr>-->
+            </tr>
 				<tr>
 					<th scope="row">sunrise<br />sunset</th>
 					<td>iso8601</td>
@@ -1513,9 +1526,9 @@
 				</tr>
 			</tbody>
 		</table>
-	</div>
+	</div> -->
 
-	<h3 class="mt-5">JSON Return Object</h3>
+	<!-- <h3 class="mt-5">JSON Return Object</h3>
 	<p>On success a JSON object will be returned.</p>
 	<pre>
       <code>
@@ -1536,8 +1549,8 @@
   }
 `}
       </code>
-    </pre>
-	<div class="table-responsive">
+    </pre> -->
+	<!-- <div class="table-responsive">
 		<table class="table">
 			<thead>
 				<tr>
@@ -1617,8 +1630,8 @@
 				<tr>
 			</tbody>
 		</table>
-	</div>
-	<h3 class="mt-5">Errors</h3>
+	</div> -->
+	<!-- <h3 class="mt-5">Errors</h3>
 	<p>
 		In case an error occurs, for example a URL parameter is not correctly specified, a JSON error
 		object is returned with a HTTP 400 status code.
@@ -1630,5 +1643,5 @@
   "reason": "Cannot initialize WeatherVariable from invalid String value tempeture_2m for key hourly"
 `}
       </code>
-    </pre>
+    </pre> -->
 </div>

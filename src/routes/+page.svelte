@@ -28,7 +28,7 @@
           height: 500px;
         "
 >
-	<svg
+	<!-- <svg
 		style="filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));"
 		xmlns="http://www.w3.org/2000/svg"
 		width="96"
@@ -44,19 +44,19 @@
 			d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"
 		/>
 	</svg>
-	<h1 class="display-5" style="text-shadow: 3px 3px 2px rgba(0, 0, 0, .7);">Free Weather API</h1>
+	<h1 class="display-5" style="text-shadow: 3px 3px 2px rgba(0, 0, 0, .7);">ONACC - MC</h1> -->
 	<div class="col-lg-6 mx-auto">
-		<p class="lead mb-4" style="text-shadow: 3px 3px 2px rgba(0, 0, 0, .7);">
+		<!-- <p class="lead mb-4" style="text-shadow: 3px 3px 2px rgba(0, 0, 0, .7);">
 			Open-Meteo is an open-source weather API and offers free access for non-commercial use. No API
 			key required. Start using it now!
-		</p>
+		</p> -->
 		<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-			<a href="/en/features" class="btn btn-primary btn-lg px-4 me-sm-3 mr-2">Features</a>
-			<a href="/en/docs" class="btn btn-outline-light btn-lg px-4">Documentation</a>
+			<!-- <a href="/en/features" class="btn btn-primary btn-lg px-4 me-sm-3 mr-2">Features</a> -->
+			<a href="/en/docs" class="btn btn-primary btn-lg px-4 me-sm-3 mr-2">GET STARTED MNOCC</a>
 		</div>
 	</div>
 </div>
-
+<!-- 
 <div class="container col-xxl-8 px-4 py-5">
 	<div class="row g-5">
 		<div class="col-lg-6">
@@ -470,4 +470,4 @@
 			<a href="/en/features" title="APIs & Features" class="btn btn-outline-secondary btn-lg px-4">Available APIs</a>
 		</div>
 	</div>
-</div>
+</div> -->

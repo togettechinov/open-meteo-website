@@ -364,7 +364,7 @@
 </script>
 
 <div class="col-12 my-4">
-	<h2>Preview</h2>
+	<h2>Visualisation</h2>
 
 	<div id="container w-100">
 		{#await results}

@@ -424,7 +424,7 @@
 	</div>
 
 	<div class="row py-3 px-0">
-		<h2>Daily Weather Variables</h2>
+		<h2>Variables météorologiques (quotidiennes)</h2>
 		{#each daily as group}
 			<div class="col-md-6">
 				{#each group as e}
